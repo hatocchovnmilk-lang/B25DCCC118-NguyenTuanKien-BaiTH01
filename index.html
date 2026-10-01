@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang cá nhân của Nguyễn Tuấn Kiên</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2 class="logo"> hello </h2>
+    <button id="menu-btn">☰</button>
+    <nav id="menu">
+      <a href="#gioithieu">Giới thiệu</a>
+      <a href="#kynang">Kỹ năng</a>
+      <a href="#duan">Dự án</a>
+      <a href="#lienhe">Liên hệ</a>
+      <button id="dark-btn">Tối/Sáng</button>
+    </nav>
+  </header>
+
+  <section id="gioithieu">
+    <h1>Xin chào, mình là Kiên</h1>
+    <p>Mình là sinh viên năm 2 Ptit ngành UDU mình thở mỗi ngày .</p>
+  </section>
+
+  <section id="kynang">
+    <h2>Kỹ năng</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript cơ bản</li>
+      <li>thở</li>
+    </ul>
+  </section>
+
+  <section id="duan">
+    <h2>Dự án</h2>
+    <input type="text" id="search" placeholder="Tìm dự án...">
+    <div class="projects">
+      <div class="project">
+        <h3>Trang giới thiệu bản thân</h3>
+        <p>Bài thực hành đầu tiên dùng HTML và CSS.</p>
+      </div>
+      <div class="project">
+        <h3>Máy tính bỏ túi</h3>
+        <p>Máy tính cộng trừ nhân chia bằng JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>chạy win dạo</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="lienhe">
+    <h2>Liên hệ</h2>
+    <form id="form">
+      <label>Họ tên:</label>
+      <input type="text" id="name">
+
+      <label>Email:</label>
+      <input type="text" id="email">
+
+      <label>Lời nhắn:</label>
+      <textarea id="message" maxlength="200"></textarea>
+      <p><span id="count">0</span>/200 ký tự</p>
+
+      <p id="error"></p>
+      <button type="submit">Gửi</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> https://img.sanishtech.com/u/a4dbde424b15322214c130b933ccd009.png</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
